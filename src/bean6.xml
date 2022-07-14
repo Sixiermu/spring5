@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                             http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd" >
+    <!--提取list集合类型 -->
+    <util:list id = "booklist">
+        <value>易经经</value>
+        <value>九阳盛工</value>
+    </util:list>
+    <!--提取list集合公共部分后注入对象-->
+    <bean id="book" class="com.atguigu.spring5.colletiontype.Book1">
+        <property name="list" ref="booklist"></property>
+    </bean>
+</beans>

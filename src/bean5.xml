@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!--1.集合类型属性注入-->
+    <bean id="stu" class="com.atguigu.spring5.colletiontype.Stu">
+        <!--数组类属性注入 list或者 array标签-->
+        <property name="courses" >
+            <array>
+                <value>数学</value>
+                <value>英语</value>
+            </array>
+        </property>
+        <!--list类型属性注入-->
+        <property name="list">
+            <list>
+                <value>张三</value>
+                <value>李四</value>
+            </list>
+        </property>
+        <!--map..注入-->
+        <property name="map">
+            <map>
+                <entry key="JAVA" value="java"></entry>
+                <entry key="PHP" ><null></null></entry>
+            </map>
+        </property>
+        <!--set-->
+        <property name="set">
+            <set>
+                <value>MySQL</value>
+                <value>Redis</value>
+            </set>
+        </property>
+    </bean>
+
+
+</beans>

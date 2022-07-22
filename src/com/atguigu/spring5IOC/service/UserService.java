@@ -1,10 +1,8 @@
-package com.atguigu.spring5.service;
+package com.atguigu.spring5IOC.service;
 
-import com.atguigu.spring5.dao.UserDao;
-import com.atguigu.spring5.dao.UserDaoImpl;
+import com.atguigu.spring5IOC.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 //value 和id的作用一致

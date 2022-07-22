@@ -1,4 +1,4 @@
-package com.atguigu.spring5.bean;
+package com.atguigu.spring5IOC.bean;
 
 public class Emp {
     private String ename;

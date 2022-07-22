@@ -7,12 +7,12 @@
                              http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd" >
 
     <!--FatoryBean 定义类型和返回类型不一致-->
-    <bean id="mybean" class="com.atguigu.spring5.factorybean.MyBean">
+    <bean id="mybean" class="com.atguigu.spring5IOC.factorybean.MyBean">
     <!--自动装配-->
     </bean>
-    <bean id="emp" class="com.atguigu.spring5.bean.Emp" autowire="byName">
+    <bean id="emp" class="com.atguigu.spring5IOC.bean.Emp" autowire="byName">
         <!--<property name="dept" ref="dept"></property>-->
     </bean>
-    <bean id="dept" class="com.atguigu.spring5.bean.Dept"></bean>
+    <bean id="dept" class="com.atguigu.spring5IOC.bean.Dept"></bean>
 
 </beans>

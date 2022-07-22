@@ -1,4 +1,4 @@
-package com.atguigu.spring5.config;
+package com.atguigu.spring5IOC.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

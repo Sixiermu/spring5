@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         <!--1.集合类型属性注入-->
-    <bean id="stu" class="com.atguigu.spring5.colletiontype.Stu">
+    <bean id="stu" class="com.atguigu.spring5IOC.colletiontype.Stu">
         <!--数组类属性注入 list或者 array标签-->
         <property name="courses" >
             <array>
@@ -43,10 +43,10 @@
 
         <!--创建多个course对象-->
     </bean>
-    <bean id="course1" class="com.atguigu.spring5.colletiontype.Course">
+    <bean id="course1" class="com.atguigu.spring5IOC.colletiontype.Course">
         <property name="cname" value="数学"></property>
     </bean>
-    <bean id="course2" class="com.atguigu.spring5.colletiontype.Course">
+    <bean id="course2" class="com.atguigu.spring5IOC.colletiontype.Course">
         <property name="cname" value="MyBatis框架"></property>
     </bean>
 

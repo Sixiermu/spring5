@@ -1,4 +1,4 @@
-package com.atguigu.spring5;
+package com.atguigu.spring5IOC;
 
 public class User {
     private String name;

@@ -1,4 +1,4 @@
-package com.atguigu.spring5.dao;
+package com.atguigu.spring5IOC.dao;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;

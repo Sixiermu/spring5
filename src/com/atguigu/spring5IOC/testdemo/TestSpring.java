@@ -1,10 +1,7 @@
-package com.atguigu.spring5.testdemo;
-import com.atguigu.spring5.Book;
-import com.atguigu.spring5.Order;
-import com.atguigu.spring5.User;
+package com.atguigu.spring5IOC.testdemo;
+import com.atguigu.spring5IOC.Book;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class TestSpring{

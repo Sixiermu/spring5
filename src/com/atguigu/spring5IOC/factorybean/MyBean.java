@@ -1,6 +1,6 @@
-package com.atguigu.spring5.factorybean;
+package com.atguigu.spring5IOC.factorybean;
 
-import com.atguigu.spring5.bean.Emp;
+import com.atguigu.spring5IOC.bean.Emp;
 import org.springframework.beans.factory.FactoryBean;
 //实现FactoryBean 并通过泛型定义返回对象
 public class MyBean implements FactoryBean<Emp> {

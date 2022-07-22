@@ -1,9 +1,7 @@
-package com.atguigu.spring5.testdemo;
-import com.atguigu.spring5.Book;
-import com.atguigu.spring5.User;
-import com.atguigu.spring5.bean.Emp;
-import com.atguigu.spring5.colletiontype.Stu;
-import com.atguigu.spring5.service.UserService;
+package com.atguigu.spring5IOC.testdemo;
+import com.atguigu.spring5IOC.bean.Emp;
+import com.atguigu.spring5IOC.colletiontype.Stu;
+import com.atguigu.spring5IOC.service.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

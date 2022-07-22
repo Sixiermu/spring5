@@ -1,4 +1,4 @@
-package com.atguigu.spring5;
+package com.atguigu.spring5IOC;
 
 public class Order {
     private String address;

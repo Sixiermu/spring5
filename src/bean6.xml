@@ -11,7 +11,7 @@
         <value>九阳盛工</value>
     </util:list>
     <!--提取list集合公共部分后注入对象-->
-    <bean id="book" class="com.atguigu.spring5.colletiontype.Book1">
+    <bean id="book" class="com.atguigu.spring5IOC.colletiontype.Book1">
         <property name="list" ref="booklist"></property>
     </bean>
 </beans>

@@ -1,4 +1,4 @@
-package com.atguigu.spring5.colletiontype;
+package com.atguigu.spring5IOC.colletiontype;
 
 import java.util.List;
 

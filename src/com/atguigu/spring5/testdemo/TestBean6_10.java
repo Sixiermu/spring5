@@ -1,10 +1,15 @@
 package com.atguigu.spring5.testdemo;
 import com.atguigu.spring5.bean.Emp;
 import com.atguigu.spring5.colletiontype.Book1;
+import com.atguigu.spring5.config.SpringConfig;
 import com.atguigu.spring5.factorybean.MyBean;
+import com.atguigu.spring5.service.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import javax.xml.ws.Service;
 
 
 public class TestBean6_10 {
@@ -27,8 +32,37 @@ public class TestBean6_10 {
 
         //获取配置文件创建的对象.class 表示转换类型
          Emp emp = context.getBean("mybean", Emp.class);
+         System.out.println(emp);
+    }
+    @Test
+    public void testBeanByAnnotionn(){
+
+        //加载配置文件 src下相对路径
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/atguigu/spring5/beanmanagebyannotation/beanbyannotation.xml");
+
+        //获取配置文件创建的对象.class 表示转换类型
+        UserService useService = context.getBean("userService", UserService.class);
+        useService.add();
+    }
+
+    @Test
+    public void attributeByAnnotionn(){
+
+        //加载配置文件 src下相对路径
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/atguigu/spring5/beanmanagebyannotation/beanbyannotation.xml");
+
+        //获取配置文件创建的对象.class 表示转换类型
+        UserService useService = context.getBean("userService", UserService.class);
         //myBean.test();
-        System.out.println(emp);
+        useService.add();
+    }
+    @Test
+    public void testConfigSpring(){
+        ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
+        //获取配置文件创建的对象.class 表示转换类型
+        UserService useService = context.getBean("userService", UserService.class);
+        //myBean.test();
+        useService.add();
     }
 }
 
